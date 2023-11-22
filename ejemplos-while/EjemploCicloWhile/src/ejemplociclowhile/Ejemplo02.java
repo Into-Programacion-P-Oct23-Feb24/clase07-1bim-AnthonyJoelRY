@@ -22,9 +22,12 @@ public class Ejemplo02 {
         int contador = 1;
         System.out.println("Ingrese el límite");
         limite = entrada.nextInt();
-        while (contador <= limite){
+        while (contador<=limite){
+            if (contador%2!=0){
             System.out.printf("Contador %d\n", contador);
-            contador = contador + 1;
+            }
+              contador = contador + 1;
+            
         }
         
     }
