@@ -19,19 +19,24 @@ public class Ejemplo03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+               // TODO code application logic here
+        Scanner entrada = new Scanner(System.in);//Se declara escanner 
+                                           // para obtener datos por teclado
+        entrada.useLocale(Locale.US);//Se usa el metodo Locale.US para 
+                                           //limitar el uso del punto exclusivamente 
+                                           //para los decimales 
         int limite = 5;
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
-        
+        //ingresamos un a un ciclo repetitivo y perdimos valores luego los sumamos
+        //y los vamos guardando
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
             suma = suma + valor_ingresado;
             System.out.printf("Valor ingresado %d\n", valor_ingresado);
-            contador = contador + 1;
+         
         }
 
         System.out.printf("La suma final es %d\n", suma);
