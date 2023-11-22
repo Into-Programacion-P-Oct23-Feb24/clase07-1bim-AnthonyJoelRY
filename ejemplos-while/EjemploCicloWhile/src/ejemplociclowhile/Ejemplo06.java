@@ -26,6 +26,7 @@ public class Ejemplo06 {
         double suma_total = 0;
         double calificacion;
         boolean bandera = true;
+        int contador = 0;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
@@ -42,13 +43,14 @@ public class Ejemplo06 {
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
             int temporal = entrada.nextInt();
+            contador = contador+1;
 
             if (temporal == -1) {
                 bandera = false;
+            
             }
         }
-
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        System.out.printf("Suma de calificaciones es %.2f\nPromedio:%s\n", suma_total,(suma_total/contador));
 
     }
 }

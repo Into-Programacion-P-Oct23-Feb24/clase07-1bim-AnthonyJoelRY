@@ -40,7 +40,8 @@ public class Ejemplo051 {
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
             
-            calificaciones = String.format("%scalificaciono ingresada#%s: %s\n",calificaciones,contador,calificacion);
+            calificaciones = String.format("%scalificacion ingresada#%s: "
+            + "%s\n",calificaciones,contador,calificacion);
            
             // contador
             contador = contador + 1;
