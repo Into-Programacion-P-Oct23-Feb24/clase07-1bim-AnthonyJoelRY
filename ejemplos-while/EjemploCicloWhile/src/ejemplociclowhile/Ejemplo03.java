@@ -30,13 +30,13 @@ public class Ejemplo03 {
         int suma = 0;
         int valor_ingresado;
         //ingresamos un a un ciclo repetitivo y perdimos valores luego los sumamos
-        //y los vamos guardando
+        //y los vamos guardando,utilisando un contador limitamos los ingresos 
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
             suma = suma + valor_ingresado;
             System.out.printf("Valor ingresado %d\n", valor_ingresado);
-         
+            contador = contador + 1;
         }
 
         System.out.printf("La suma final es %d\n", suma);

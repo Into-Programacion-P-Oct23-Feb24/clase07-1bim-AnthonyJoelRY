@@ -16,11 +16,8 @@ public class Ejemplo02 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);//Se declara escanner 
-                                           // para obtener datos por teclado
-        entrada.useLocale(Locale.US);//Se usa el metodo Locale.US para 
-                                           //limitar el uso del punto exclusivamente 
-                                           //para los decimales 
+        Scanner entrada = new Scanner(System.in);                                  
+        entrada.useLocale(Locale.US);                           
         int limite;
         int contador = 1;
         //
